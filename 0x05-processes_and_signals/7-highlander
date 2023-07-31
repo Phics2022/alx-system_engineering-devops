@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 # this shell script dis about pids
+
+handle_sigterm()
+{
+	echo "I am invicinble!!!"
+}
 i=1
+trap 'handle_sigterm' SIGTERM
 while ((i == 1))
 do
-	echo "TO infinity and beyond"
+	echo "To infinity and beyond"
 	sleep 2
-	trap "I am invisible!!!" SIGTERM
 done
