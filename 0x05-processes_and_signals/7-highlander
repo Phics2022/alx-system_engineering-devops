@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# this shell script dis about pids
+i=1
+while ((i == 1))
+do
+	echo "TO infinity and beyond"
+	sleep 2
+	trap "I am invisible!!!" SIGTERM
+done
