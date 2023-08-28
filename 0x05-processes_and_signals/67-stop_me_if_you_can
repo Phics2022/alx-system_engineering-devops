@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# end a process
-
-./dont_stop_me_now
